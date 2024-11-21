@@ -44,3 +44,27 @@ uhf.csv: Contains UHF location data, mapping UHF IDs to zip codes and boroughs.
 Handle missing or invalid data more robustly.
 Add visualization 📊 (e.g., graphs or charts) to display air quality trends.
 Optimize performance ⚙️ for larger datasets.
+
+Part 2: Data Analysis Functions 🧑‍🔬
+In Part 2, we implement several analysis functions that leverage the air quality and UHF data for deeper insights. These functions allow querying and analyzing pollution levels across different geographic locations (by UHF ID, Zip Code, Borough, Date, and Year), and calculating key statistics such as high/low pollution levels, average pollution per borough, and identifying areas that exceed a pollution threshold.
+
+Key Features:
+get_pm(query_type, query, geo_map, date_map, zip_map, borough_map)
+Retrieves a list of pollution data (PM levels) based on a given query (zip code, UHF ID, borough, date, or year). Returns a list of tuples containing the UHF ID, Region, Date, and PM value.
+
+high_low_poll(zip_code, geo_map, date_map, zip_map, borough_map)
+Returns the lowest and highest pollution levels ever recorded in a given zip code.
+
+worst_poll(year, geo_map, date_map, zip_map, borough_map)
+Identifies the UHF ID with the highest pollution recorded for a given year.
+
+avg_poll(year, borough, geo_map, date_map, zip_map, borough_map)
+Calculates the average pollution in a specific borough for a given year.
+
+highest_avg_poll(year, geo_map, date_map, zip_map, borough_map)
+Finds the borough with the highest average pollution for a given year.
+
+uhf_above_threshold(thresh, year, borough, geo_map, date_map, zip_map, borough_map)
+Returns a list of UHF neighborhoods within a specified borough and year that exceed a given pollution threshold.
+
+These functions provide a flexible way to perform air quality analysis at various spatial and temporal levels, helping to uncover pollution hotspots and understand trends in different neighborhoods of New York City. 🌍🌿
