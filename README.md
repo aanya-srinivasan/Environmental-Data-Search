@@ -1,6 +1,4 @@
 
-Got it! Here's your Part 1 description with added emojis for a more engaging and visually appealing README:
-
 🟢 Part 1: Air Quality Data Analysis 🌿
 📚 Overview
 Part 1 of this project focuses on analyzing air quality data for New York City (NYC) neighborhoods, specifically using data from UHF (Urban Health and Fitness) locations. The main objective is to read air quality measurements from CSV files, map them by geographic region and date, and provide users with an interactive interface to query this data by various search parameters.
