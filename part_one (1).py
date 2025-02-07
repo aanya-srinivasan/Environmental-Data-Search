@@ -3,9 +3,6 @@
 """
 Created on Fri Oct  4 13:37:42 2024
 
-@author: amandachiang
-
-GROUP MEMBERS: Amanda Chiang, Mark Hrytchak, Aanya Srinivasan
 """
     
 # reads air quality csv file, returns a tuple (geo_map, date_map)
